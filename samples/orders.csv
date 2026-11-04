@@ -1,0 +1,6 @@
+order_id,customer_email,phone,amount,currency,order_date
+1001,aru@example.com,+7 701 123 4567,120.50,USD,2026-10-01
+1002,dana@example,8(701)1234568,99.00,USD,01/10/2026
+1003,timur@example.com,7011234569,abc,EUR,2026-10-02T14:30:00+02:00
+1004,,+7-701-123-4570,45.00,KZT,2026-13-01
+1001,aru@example.com,+7 701 123 4567,120.50,USD,2026-10-01

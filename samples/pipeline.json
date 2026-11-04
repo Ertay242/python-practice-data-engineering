@@ -1,0 +1,12 @@
+{
+  "source": {"type": "csv", "path": "samples/orders.csv"},
+  "transforms": [{"type": "cast", "schema": "orders"}, {"type": "dedupe", "key": "order_id"}],
+  "checks": [{"type": "not_null", "column": "customer_email"}],
+  "sink": {"type": "jsonl", "path": "out/clean_orders.jsonl"},
+  "date_column": "order_date",
+  "source_tz": "UTC",
+  "output_dir": "out/partitioned",
+  "report_path": "out/run_report.json",
+  "watermark_path": "out/watermark.json",
+  "quarantine_path": "out/quarantine.jsonl"
+}
